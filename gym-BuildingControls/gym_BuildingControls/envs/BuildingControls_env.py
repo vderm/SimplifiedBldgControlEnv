@@ -530,8 +530,8 @@ class BuildingControlsEnv(gym.Env):
             self.T_high_sp = 25.     # setpoint temps: if out of range, small constant penalty per timestep
             self.T_low_sp = 20.
             self.reward_termination = 0.
-            self.penalty_hvac_toggle = -1.
-            self.cost_factor = 0.01
+            self.penalty_hvac_toggle = -1.1
+            self.cost_factor = 0.2
             self.comfort_penalty_scheme = 'linear'
             self.T_high_limit = 35.  # limit temperatures: if reached, episode terminates with large penalty (used for 'linear with termination' scheme)
             self.T_low_limit = 10.
